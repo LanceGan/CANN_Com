@@ -1,3 +1,4 @@
+// f:/Projects/CANN_Com/src/algorithm/alltoall/alltoall_direct.h
 #pragma once
 
 #include "algorithm/algorithm.h"
@@ -8,10 +9,7 @@ class AlltoAllDirect : public Algorithm {
 public:
     Status Execute(void* sendbuf, void* recvbuf, size_t count,
                    HCCLDataType dtype, HCCLReduceOp op,
-                   CommContext& ctx) override {
-        // TODO: implement in Task 5
-        return Status::INTERNAL_ERROR;
-    }
+                   CommContext& ctx) override;
 
     const char* Name() const override { return "AlltoAllDirect"; }
 
