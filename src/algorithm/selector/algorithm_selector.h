@@ -5,7 +5,9 @@
 #include "algorithm/allreduce/allreduce_ring.h"
 #include "algorithm/allreduce/allreduce_rhd.h"
 #include "algorithm/allgather/allgather_ring.h"
+#include "algorithm/allgather/allgather_butterfly.h"
 #include "algorithm/reduce_scatter/reduce_scatter_ring.h"
+#include "algorithm/reduce_scatter/reduce_scatter_butterfly.h"
 #include "algorithm/alltoall/alltoall_direct.h"
 #include <vector>
 #include <string>
@@ -33,7 +35,9 @@ private:
     AllReduceRing allreduce_ring_;
     AllReduceRHD allreduce_rhd_;
     AllGatherRing allgather_ring_;
+    AllGatherButterfly allgather_butterfly_;
     ReduceScatterRing reduce_scatter_ring_;
+    ReduceScatterButterfly reduce_scatter_butterfly_;
     AlltoAllDirect alltoall_direct_;
 };
 

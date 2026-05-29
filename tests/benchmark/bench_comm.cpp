@@ -7,7 +7,9 @@
 #include "algorithm/allreduce/allreduce_ring.h"
 #include "algorithm/allreduce/allreduce_rhd.h"
 #include "algorithm/allgather/allgather_ring.h"
+#include "algorithm/allgather/allgather_butterfly.h"
 #include "algorithm/reduce_scatter/reduce_scatter_ring.h"
+#include "algorithm/reduce_scatter/reduce_scatter_butterfly.h"
 #include "algorithm/alltoall/alltoall_direct.h"
 #include "algorithm/algorithm.h"
 #include <iostream>
@@ -114,7 +116,9 @@ int main(int argc, char* argv[]) {
     AllReduceRing allreduce;
     AllReduceRHD allreduce_rhd;
     AllGatherRing allgather;
+    AllGatherButterfly allgather_butterfly;
     ReduceScatterRing reduce_scatter;
+    ReduceScatterButterfly reduce_scatter_butterfly;
     AlltoAllDirect alltoall;
 
     std::vector<size_t> sizes = {
@@ -130,7 +134,9 @@ int main(int argc, char* argv[]) {
         printResult(runBench("AllReduceRing", allreduce, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("AllReduceRHD", allreduce_rhd, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("AllGatherRing", allgather, nranks, count, HCCLDataType::FLOAT32));
+        printResult(runBench("AllGatherButterfly", allgather_butterfly, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("ReduceScatterRing", reduce_scatter, nranks, count, HCCLDataType::FLOAT32));
+        printResult(runBench("ReduceScatterButterfly", reduce_scatter_butterfly, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("AlltoAllDirect", alltoall, nranks, count, HCCLDataType::FLOAT32));
         std::cout << std::endl;
     }

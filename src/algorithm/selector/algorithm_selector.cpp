@@ -15,8 +15,14 @@ Algorithm* AlgorithmSelector::Select(PrimitiveType prim, size_t bytes,
             }
             return &allreduce_ring_;
         case PrimitiveType::ALL_GATHER:
+            if (bytes > 4 * 1024 * 1024 && (nranks & (nranks - 1)) == 0) {
+                return &allgather_butterfly_;
+            }
             return &allgather_ring_;
         case PrimitiveType::REDUCE_SCATTER:
+            if (bytes > 4 * 1024 * 1024 && (nranks & (nranks - 1)) == 0) {
+                return &reduce_scatter_butterfly_;
+            }
             return &reduce_scatter_ring_;
         case PrimitiveType::ALL_TO_ALL:
             return &alltoall_direct_;
@@ -30,9 +36,9 @@ std::vector<std::string> AlgorithmSelector::ListAlgorithms(PrimitiveType prim) c
         case PrimitiveType::ALL_REDUCE:
             return {"AllReduceRing", "AllReduceRHD"};
         case PrimitiveType::ALL_GATHER:
-            return {"AllGatherRing"};
+            return {"AllGatherRing", "AllGatherButterfly"};
         case PrimitiveType::REDUCE_SCATTER:
-            return {"ReduceScatterRing"};
+            return {"ReduceScatterRing", "ReduceScatterButterfly"};
         case PrimitiveType::ALL_TO_ALL:
             return {"AlltoAllDirect"};
         default:
