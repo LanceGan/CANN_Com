@@ -5,6 +5,7 @@
 #include "simulator/simulator.h"
 #include "simulator/topology/topology_builder.h"
 #include "algorithm/allreduce/allreduce_ring.h"
+#include "algorithm/allreduce/allreduce_rhd.h"
 #include "algorithm/allgather/allgather_ring.h"
 #include "algorithm/reduce_scatter/reduce_scatter_ring.h"
 #include "algorithm/alltoall/alltoall_direct.h"
@@ -111,6 +112,7 @@ int main(int argc, char* argv[]) {
     std::cout << "Ranks: " << nranks << std::endl << std::endl;
 
     AllReduceRing allreduce;
+    AllReduceRHD allreduce_rhd;
     AllGatherRing allgather;
     ReduceScatterRing reduce_scatter;
     AlltoAllDirect alltoall;
@@ -126,6 +128,7 @@ int main(int argc, char* argv[]) {
         size_t count = size / sizeof(float);
         std::cout << "--- Data size: " << size << " bytes ---" << std::endl;
         printResult(runBench("AllReduceRing", allreduce, nranks, count, HCCLDataType::FLOAT32));
+        printResult(runBench("AllReduceRHD", allreduce_rhd, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("AllGatherRing", allgather, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("ReduceScatterRing", reduce_scatter, nranks, count, HCCLDataType::FLOAT32));
         printResult(runBench("AlltoAllDirect", alltoall, nranks, count, HCCLDataType::FLOAT32));
