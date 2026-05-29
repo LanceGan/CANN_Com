@@ -74,16 +74,16 @@ class LLMInterface:
 
     def _mock_generate(self, system_prompt: str, user_prompt: str) -> str:
         """Mock LLM for testing."""
-        if "AllReduce" in user_prompt and "design" in user_prompt.lower():
-            return self._mock_allreduce_design()
-        elif "AllGather" in user_prompt and "design" in user_prompt.lower():
-            return self._mock_allgather_design()
+        if "code" in user_prompt.lower() or "implement" in user_prompt.lower():
+            return self._mock_code_generation()
         elif "test" in user_prompt.lower() and "generate" in user_prompt.lower():
             return self._mock_test_generation()
         elif "optim" in user_prompt.lower():
             return self._mock_optimization()
-        elif "code" in user_prompt.lower() or "implement" in user_prompt.lower():
-            return self._mock_code_generation()
+        elif "AllGather" in user_prompt and "design" in user_prompt.lower():
+            return self._mock_allgather_design()
+        elif "AllReduce" in user_prompt and "design" in user_prompt.lower():
+            return self._mock_allreduce_design()
         else:
             return "Mock LLM: I understand your request. Here is my analysis based on the provided context."
 
