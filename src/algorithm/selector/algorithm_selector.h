@@ -3,6 +3,7 @@
 
 #include "algorithm/algorithm.h"
 #include "algorithm/allreduce/allreduce_ring.h"
+#include "algorithm/allreduce/allreduce_rhd.h"
 #include "algorithm/allgather/allgather_ring.h"
 #include "algorithm/reduce_scatter/reduce_scatter_ring.h"
 #include "algorithm/alltoall/alltoall_direct.h"
@@ -30,6 +31,7 @@ public:
 
 private:
     AllReduceRing allreduce_ring_;
+    AllReduceRHD allreduce_rhd_;
     AllGatherRing allgather_ring_;
     ReduceScatterRing reduce_scatter_ring_;
     AlltoAllDirect alltoall_direct_;

@@ -9,6 +9,10 @@ Algorithm* AlgorithmSelector::Select(PrimitiveType prim, size_t bytes,
                                       uint32_t nranks) {
     switch (prim) {
         case PrimitiveType::ALL_REDUCE:
+            // RHD is better for large data on power-of-2 ranks
+            if (bytes > 4 * 1024 * 1024 && (nranks & (nranks - 1)) == 0) {
+                return &allreduce_rhd_;
+            }
             return &allreduce_ring_;
         case PrimitiveType::ALL_GATHER:
             return &allgather_ring_;
@@ -24,7 +28,7 @@ Algorithm* AlgorithmSelector::Select(PrimitiveType prim, size_t bytes,
 std::vector<std::string> AlgorithmSelector::ListAlgorithms(PrimitiveType prim) const {
     switch (prim) {
         case PrimitiveType::ALL_REDUCE:
-            return {"AllReduceRing"};
+            return {"AllReduceRing", "AllReduceRHD"};
         case PrimitiveType::ALL_GATHER:
             return {"AllGatherRing"};
         case PrimitiveType::REDUCE_SCATTER:
