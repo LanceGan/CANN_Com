@@ -24,6 +24,7 @@ add_cann_test(test_allgather       unit/test_allgather.cpp)
 add_cann_test(test_reduce_scatter  unit/test_reduce_scatter.cpp)
 add_cann_test(test_alltoall        unit/test_alltoall.cpp)
 add_cann_test(test_algorithm_selector unit/test_algorithm_selector.cpp)
+add_cann_test(test_allreduce_rhd    unit/test_allreduce_rhd.cpp)
 
 # Benchmark
 add_executable(bench_comm benchmark/bench_comm.cpp)
