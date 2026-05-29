@@ -58,3 +58,14 @@ def test_orchestrator_logs(orchestrator):
     assert log_dir.exists()
     log_files = list(log_dir.glob("*.json"))
     assert len(log_files) > 0
+
+
+def test_orchestrator_iterative(orchestrator):
+    """Orchestrator should support iterative optimization."""
+    result = orchestrator.run_iterative_pipeline(
+        primitive="AllReduce",
+        nranks=4,
+        max_iterations=1,
+    )
+    assert "design" in result
+    assert "code" in result
