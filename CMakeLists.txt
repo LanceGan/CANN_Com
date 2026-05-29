@@ -16,6 +16,7 @@ add_library(cann_sim STATIC
     src/simulator/topology/topology_builder.cpp
     src/simulator/network/link_model.cpp
     src/simulator/channel/pure_sim_channel.cpp
+    src/simulator/channel/fault_channel.cpp
     src/simulator/simulator.cpp
     src/algorithm/allreduce/allreduce_ring.cpp
     src/algorithm/allreduce/allreduce_rhd.cpp
