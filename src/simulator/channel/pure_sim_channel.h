@@ -5,8 +5,10 @@
 #include "simulator/topology/topology.h"
 #include "simulator/network/link_model.h"
 #include <vector>
+#include <deque>
 #include <unordered_map>
 #include <mutex>
+#include <condition_variable>
 #include <cstdint>
 
 namespace cann {
@@ -34,9 +36,11 @@ private:
     LinkModel getLinkTo(uint32_t other_rank) const;
 
     // Shared mailbox for simulated data transfer between channel instances.
-    // Key: (src_rank << 32 | dst_rank) — stores pending messages.
-    static std::unordered_map<uint64_t, std::vector<uint8_t>>& mailbox();
+    // Key: (src_rank << 32 | dst_rank) — stores a FIFO queue of pending messages.
+    // Using a queue ensures messages from different algorithm steps are not lost.
+    static std::unordered_map<uint64_t, std::deque<std::vector<uint8_t>>>& mailbox();
     static std::mutex& mailboxMutex();
+    static std::condition_variable& mailboxCV();
 };
 
 } // namespace cann
