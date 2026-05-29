@@ -1,11 +1,5 @@
 # f:/Projects/CANN_Com/tests/CMakeLists.txt
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    GIT_REPOSITORY https://github.com/google/googletest.git
-    GIT_TAG        v1.14.0
-)
-FetchContent_MakeAvailable(googletest)
+find_package(GTest REQUIRED)
 
 # Helper function to add tests
 function(add_cann_test TEST_NAME TEST_SRC)
@@ -22,6 +16,7 @@ add_cann_test(test_simulator   unit/test_simulator.cpp)
 add_cann_test(test_allreduce       unit/test_allreduce.cpp)
 add_cann_test(test_allgather       unit/test_allgather.cpp)
 add_cann_test(test_reduce_scatter  unit/test_reduce_scatter.cpp)
+add_cann_test(test_reduce_scatter_butterfly  unit/test_reduce_scatter_butterfly.cpp)
 add_cann_test(test_alltoall        unit/test_alltoall.cpp)
 add_cann_test(test_algorithm_selector unit/test_algorithm_selector.cpp)
 add_cann_test(test_allreduce_rhd    unit/test_allreduce_rhd.cpp)
