@@ -27,6 +27,7 @@ add_cann_test(test_fault_channel    unit/test_fault_channel.cpp)
 add_cann_test(test_multinode        unit/test_multinode.cpp)
 add_cann_test(test_reliability      fault/test_reliability.cpp)
 add_cann_test(test_mixed_precision  unit/test_mixed_precision.cpp)
+add_cann_test(test_correctness_rigorous unit/test_correctness_rigorous.cpp)
 
 # Benchmark
 add_executable(bench_comm benchmark/bench_comm.cpp)
