@@ -8,16 +8,17 @@ FaultChannel::FaultChannel(std::unique_ptr<IChannel> inner, const FaultConfig& c
     : inner_(std::move(inner)), config_(config), rng_(42) {}
 
 void FaultChannel::send(const void* data, size_t bytes, uint32_t dst_rank) {
-    // Flow control: wait until a slot is available
+    // Flow control: atomically acquire a send slot via CAS loop
+    // (avoids TOCTOU race between load() and fetch_add())
     if (config_.max_concurrent_sends > 0) {
-        while (active_sends_.load() >= config_.max_concurrent_sends) {
-            // Spin-wait for a free slot
+        while (true) {
+            uint32_t current = active_sends_.load();
+            if (current < config_.max_concurrent_sends) {
+                if (active_sends_.compare_exchange_weak(current, current + 1)) {
+                    break;
+                }
+            }
         }
-    }
-
-    // Track active sends for flow control
-    if (config_.max_concurrent_sends > 0) {
-        active_sends_.fetch_add(1);
     }
 
     bool success = false;

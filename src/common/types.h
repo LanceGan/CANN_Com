@@ -60,7 +60,11 @@ inline float fp16_to_float(uint16_t h) {
     }
     if (exp == 31) {
         if (mantissa == 0) return sign ? -__builtin_huge_valf() : __builtin_huge_valf();
-        return __builtin_nanf("");
+        // NaN: preserve payload in float mantissa
+        uint32_t f = (sign << 31) | 0x7F800000 | (mantissa << 13);
+        float result;
+        __builtin_memcpy(&result, &f, 4);
+        return result;
     }
 
     uint32_t f = (sign << 31) | ((exp + 112) << 23) | (mantissa << 13);
