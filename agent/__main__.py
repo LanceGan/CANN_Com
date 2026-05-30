@@ -2,6 +2,7 @@
 import argparse
 import json
 import logging
+import re
 import sys
 from pathlib import Path
 
@@ -62,7 +63,8 @@ def main():
     output_dir.mkdir(exist_ok=True)
     for stage, result in results.items():
         for filename, content in result.get("artifacts", {}).items():
-            out_path = output_dir / filename
+            safe_name = re.sub(r'[^\w\-.]', '_', filename)
+            out_path = output_dir / safe_name
             out_path.write_text(content, encoding="utf-8")
             print(f"  Saved: {out_path}")
 

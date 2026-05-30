@@ -18,7 +18,9 @@ class CodebaseIndex:
         return sorted(files)
 
     def get_file_content(self, relative_path: str) -> str:
-        path = self._root / relative_path
+        path = (self._root / relative_path).resolve()
+        if not path.is_relative_to(self._root.resolve()):
+            raise ValueError(f"Path traversal detected: {relative_path}")
         if not path.exists():
             raise FileNotFoundError(f"File not found: {path}")
         return path.read_text(encoding="utf-8")

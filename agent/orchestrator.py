@@ -2,6 +2,7 @@
 import time
 import json
 import logging
+import shlex
 from typing import Dict, List, Any
 from pathlib import Path
 
@@ -171,8 +172,7 @@ class Orchestrator:
         import subprocess
         try:
             result = subprocess.run(
-                self._config.build_command,
-                shell=True,
+                shlex.split(self._config.build_command),
                 cwd=self._config.project_root,
                 capture_output=True,
                 text=True,
@@ -190,8 +190,8 @@ class Orchestrator:
         import subprocess
         try:
             result = subprocess.run(
-                f"cd {self._config.project_root}/build && ctest -R test_{class_name.lower()} --output-on-failure",
-                shell=True,
+                ["ctest", "-R", f"test_{class_name.lower()}", "--output-on-failure"],
+                cwd=f"{self._config.project_root}/build",
                 capture_output=True,
                 text=True,
                 timeout=60,

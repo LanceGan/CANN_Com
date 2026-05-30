@@ -41,36 +41,28 @@ class LLMInterface:
             raise ValueError(f"Unknown provider: {self._config.llm_provider}")
 
     def _call_anthropic(self, system_prompt: str, user_prompt: str) -> str:
-        try:
-            import anthropic
-            client = anthropic.Anthropic(api_key=self._config.anthropic_api_key)
-            message = client.messages.create(
-                model=self._config.model_name,
-                max_tokens=self._config.max_tokens,
-                system=system_prompt,
-                messages=[{"role": "user", "content": user_prompt}],
-            )
-            return message.content[0].text
-        except Exception as e:
-            logger.error(f"Anthropic API error: {e}")
-            return f"ERROR: {e}"
+        import anthropic
+        client = anthropic.Anthropic(api_key=self._config.anthropic_api_key)
+        message = client.messages.create(
+            model=self._config.model_name,
+            max_tokens=self._config.max_tokens,
+            system=system_prompt,
+            messages=[{"role": "user", "content": user_prompt}],
+        )
+        return message.content[0].text
 
     def _call_openai(self, system_prompt: str, user_prompt: str) -> str:
-        try:
-            import openai
-            client = openai.OpenAI(api_key=self._config.openai_api_key)
-            response = client.chat.completions.create(
-                model=self._config.model_name,
-                max_tokens=self._config.max_tokens,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-            )
-            return response.choices[0].message.content
-        except Exception as e:
-            logger.error(f"OpenAI API error: {e}")
-            return f"ERROR: {e}"
+        import openai
+        client = openai.OpenAI(api_key=self._config.openai_api_key)
+        response = client.chat.completions.create(
+            model=self._config.model_name,
+            max_tokens=self._config.max_tokens,
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ],
+        )
+        return response.choices[0].message.content
 
     def _mock_generate(self, system_prompt: str, user_prompt: str) -> str:
         """Mock LLM for testing."""
@@ -242,7 +234,7 @@ class BaseAgent(ABC):
     def _log_execution(self, result: AgentResult):
         log_dir = self._config.logs_dir
         log_dir.mkdir(parents=True, exist_ok=True)
-        timestamp = int(time.time())
+        timestamp = time.time_ns()
         log_file = log_dir / f"{self.name}_{timestamp}.json"
         log_data = {
             "agent": self.name,
