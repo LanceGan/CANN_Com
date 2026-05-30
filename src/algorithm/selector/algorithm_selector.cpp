@@ -26,6 +26,8 @@ Algorithm* AlgorithmSelector::Select(PrimitiveType prim, size_t bytes,
             return &reduce_scatter_ring_;
         case PrimitiveType::ALL_TO_ALL:
             return &alltoall_direct_;
+        case PrimitiveType::BROADCAST:
+            return &broadcast_ring_;
         default:
             return nullptr;
     }
@@ -48,9 +50,12 @@ Algorithm* AlgorithmSelector::SelectWithTopology(PrimitiveType prim, size_t byte
     bool is_large = (bytes > kLargeThreshold);
     bool is_power_of_2 = (nranks > 0) && ((nranks & (nranks - 1)) == 0);
 
-    // For ALL_TO_ALL, topology doesn't change the algorithm choice
+    // For ALL_TO_ALL and BROADCAST, topology doesn't change the algorithm choice
     if (prim == PrimitiveType::ALL_TO_ALL) {
         return &alltoall_direct_;
+    }
+    if (prim == PrimitiveType::BROADCAST) {
+        return &broadcast_ring_;
     }
 
     // Small data always uses Ring — lowest latency regardless of topology
@@ -102,6 +107,8 @@ std::vector<std::string> AlgorithmSelector::ListAlgorithms(PrimitiveType prim) c
             return {"ReduceScatterRing", "ReduceScatterButterfly"};
         case PrimitiveType::ALL_TO_ALL:
             return {"AlltoAllDirect"};
+        case PrimitiveType::BROADCAST:
+            return {"BroadcastRing"};
         default:
             return {};
     }

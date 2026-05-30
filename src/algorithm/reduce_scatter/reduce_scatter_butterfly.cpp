@@ -1,4 +1,5 @@
 #include "algorithm/reduce_scatter/reduce_scatter_butterfly.h"
+#include "algorithm/reduce_scatter/reduce_scatter_ring.h"
 #include <cstring>
 #include <vector>
 
@@ -30,11 +31,9 @@ Status ReduceScatterButterfly::Execute(void* sendbuf, void* recvbuf, size_t coun
 
     // Check if nranks is a power of 2
     if ((nranks & (nranks - 1)) != 0) {
-        // Non-power-of-2 fallback: simple chunk copy
-        // Each rank just gets its own chunk unreduced
-        size_t chunk_bytes = chunk_elems * elem_size;
-        std::memcpy(recvbuf, static_cast<uint8_t*>(sendbuf) + rank * chunk_bytes, chunk_bytes);
-        return Status::SUCCESS;
+        // Fallback to ring for non-power-of-2
+        ReduceScatterRing ring;
+        return ring.Execute(sendbuf, recvbuf, count, dtype, op, ctx);
     }
 
     size_t chunk_bytes = chunk_elems * elem_size;

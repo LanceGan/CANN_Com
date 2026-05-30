@@ -100,6 +100,28 @@ inline void ReduceBuffer(void* dst, const void* src, size_t count,
                 case HCCLReduceOp::MIN:  d[i] = (d[i] < s[i]) ? d[i] : s[i]; break;
             }
         }
+    } else if (dtype == HCCLDataType::INT8) {
+        int8_t* d = static_cast<int8_t*>(dst);
+        const int8_t* s = static_cast<const int8_t*>(src);
+        for (size_t i = 0; i < count; i++) {
+            switch (op) {
+                case HCCLReduceOp::SUM:  d[i] += s[i]; break;
+                case HCCLReduceOp::PROD: d[i] *= s[i]; break;
+                case HCCLReduceOp::MAX:  d[i] = (d[i] > s[i]) ? d[i] : s[i]; break;
+                case HCCLReduceOp::MIN:  d[i] = (d[i] < s[i]) ? d[i] : s[i]; break;
+            }
+        }
+    } else if (dtype == HCCLDataType::UINT8) {
+        uint8_t* d = static_cast<uint8_t*>(dst);
+        const uint8_t* s = static_cast<const uint8_t*>(src);
+        for (size_t i = 0; i < count; i++) {
+            switch (op) {
+                case HCCLReduceOp::SUM:  d[i] += s[i]; break;
+                case HCCLReduceOp::PROD: d[i] *= s[i]; break;
+                case HCCLReduceOp::MAX:  d[i] = (d[i] > s[i]) ? d[i] : s[i]; break;
+                case HCCLReduceOp::MIN:  d[i] = (d[i] < s[i]) ? d[i] : s[i]; break;
+            }
+        }
     }
 }
 

@@ -47,7 +47,6 @@ Status AllReduceRHD::Execute(void* sendbuf, void* recvbuf, size_t count,
 
     std::vector<uint8_t> tmp(total_bytes);
     size_t chunk_size = count / nranks;
-    size_t half_elems = chunk_size;  // elements per exchange unit at step 0
 
     // Phase 1: Reduce-Scatter via Recursive Halving
     // At each step, paired ranks exchange data and reduce.

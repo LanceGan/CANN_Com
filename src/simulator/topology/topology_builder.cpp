@@ -58,7 +58,7 @@ TopologyBuilder& TopologyBuilder::connectNodes(const std::string& from, const st
 }
 
 Topology TopologyBuilder::build() {
-    return std::move(topo_);
+    return topo_;
 }
 
 } // namespace cann

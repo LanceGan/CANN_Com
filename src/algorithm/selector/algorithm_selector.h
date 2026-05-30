@@ -9,6 +9,7 @@
 #include "algorithm/reduce_scatter/reduce_scatter_ring.h"
 #include "algorithm/reduce_scatter/reduce_scatter_butterfly.h"
 #include "algorithm/alltoall/alltoall_direct.h"
+#include "algorithm/broadcast/broadcast_ring.h"
 #include "simulator/topology/topology.h"
 #include <vector>
 #include <string>
@@ -43,6 +44,7 @@ private:
     ReduceScatterRing reduce_scatter_ring_;
     ReduceScatterButterfly reduce_scatter_butterfly_;
     AlltoAllDirect alltoall_direct_;
+    BroadcastRing broadcast_ring_;
 };
 
 } // namespace cann
