@@ -20,6 +20,7 @@ add_library(cann_sim STATIC
     src/simulator/simulator.cpp
     src/algorithm/allreduce/allreduce_ring.cpp
     src/algorithm/allreduce/allreduce_rhd.cpp
+    src/algorithm/allreduce/allreduce_pipeline.cpp
     src/algorithm/allgather/allgather_ring.cpp
     src/algorithm/allgather/allgather_butterfly.cpp
     src/algorithm/reduce_scatter/reduce_scatter_ring.cpp
