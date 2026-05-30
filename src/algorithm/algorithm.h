@@ -64,7 +64,7 @@ public:
     virtual int NumSteps(uint32_t nranks) const = 0;
 };
 
-// Helper: apply reduce operation on raw bytes
+// Helper: apply reduce operation on raw bytes (supports FLOAT32, FLOAT16, BF16, INT32)
 inline void ReduceBuffer(void* dst, const void* src, size_t count,
                          HCCLDataType dtype, HCCLReduceOp op) {
     if (dtype == HCCLDataType::FLOAT32) {
@@ -72,6 +72,22 @@ inline void ReduceBuffer(void* dst, const void* src, size_t count,
         const float* s = static_cast<const float*>(src);
         for (size_t i = 0; i < count; i++) {
             d[i] = ApplyReduceOp(op, d[i], s[i]);
+        }
+    } else if (dtype == HCCLDataType::FLOAT16) {
+        uint16_t* d = static_cast<uint16_t*>(dst);
+        const uint16_t* s = static_cast<const uint16_t*>(src);
+        for (size_t i = 0; i < count; i++) {
+            float a = fp16_to_float(d[i]);
+            float b = fp16_to_float(s[i]);
+            d[i] = float_to_fp16(ApplyReduceOp(op, a, b));
+        }
+    } else if (dtype == HCCLDataType::BFLOAT16) {
+        uint16_t* d = static_cast<uint16_t*>(dst);
+        const uint16_t* s = static_cast<const uint16_t*>(src);
+        for (size_t i = 0; i < count; i++) {
+            float a = bf16_to_float(d[i]);
+            float b = bf16_to_float(s[i]);
+            d[i] = float_to_bf16(ApplyReduceOp(op, a, b));
         }
     } else if (dtype == HCCLDataType::INT32) {
         int32_t* d = static_cast<int32_t*>(dst);
