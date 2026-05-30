@@ -9,6 +9,7 @@
 #include "algorithm/reduce_scatter/reduce_scatter_ring.h"
 #include "algorithm/reduce_scatter/reduce_scatter_butterfly.h"
 #include "algorithm/alltoall/alltoall_direct.h"
+#include "simulator/topology/topology.h"
 #include <vector>
 #include <string>
 #include <memory>
@@ -28,6 +29,9 @@ public:
     AlgorithmSelector();
 
     Algorithm* Select(PrimitiveType prim, size_t bytes, uint32_t nranks);
+
+    Algorithm* SelectWithTopology(PrimitiveType prim, size_t bytes,
+                                  uint32_t nranks, const Topology& topo);
 
     std::vector<std::string> ListAlgorithms(PrimitiveType prim) const;
 
