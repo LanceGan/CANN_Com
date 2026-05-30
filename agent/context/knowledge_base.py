@@ -60,6 +60,38 @@ class KnowledgeBase:
             description="Direct AlltoAll: each rank sends directly to every other rank.",
             best_for="Small data, low-latency networks.",
         ),
+        "AllReducePipeline": AlgorithmInfo(
+            name="AllReducePipeline",
+            primitive="AllReduce",
+            complexity="O(2*(N-1))",
+            steps="2*(N-1) (overlapped)",
+            description="Pipeline AllReduce: Reduce-Scatter and AllGather phases are overlapped using chunk pipelining.",
+            best_for="Large data, full-duplex links, computation overlap scenarios.",
+        ),
+        "BroadcastRing": AlgorithmInfo(
+            name="BroadcastRing",
+            primitive="Broadcast",
+            complexity="O(N-1)",
+            steps="N-1",
+            description="Ring Broadcast: root sends data around a ring, each rank forwards to the next.",
+            best_for="Large data, single-node, simple implementation.",
+        ),
+        "AllGatherButterfly": AlgorithmInfo(
+            name="AllGatherButterfly",
+            primitive="AllGather",
+            complexity="O(log2(N))",
+            steps="log2(N)",
+            description="Butterfly AllGather: recursive doubling pattern with logarithmic steps.",
+            best_for="Small to medium data, latency-bound scenarios, power-of-2 ranks.",
+        ),
+        "ReduceScatterButterfly": AlgorithmInfo(
+            name="ReduceScatterButterfly",
+            primitive="ReduceScatter",
+            complexity="O(log2(N))",
+            steps="log2(N)",
+            description="Butterfly ReduceScatter: logarithmic reduction with partner at distance 2^s per step.",
+            best_for="Small to medium data, paired with AllGatherButterfly for AllReduce.",
+        ),
     }
 
     TOPOLOGIES: Dict[str, TopologyInfo] = {
@@ -85,6 +117,10 @@ class KnowledgeBase:
         "hierarchical": "Use intra-node fast path (HCCS) then inter-node (ROCE).",
         "butterfly": "Logarithmic number of steps, good for latency-bound scenarios.",
         "recursive_hd": "Recursive Halving-Doubling, bandwidth-optimal for large data.",
+        "topology_aware": "Select algorithm based on hardware topology, message size, and rank count.",
+        "chunk_size_optimization": "Choose optimal chunk size based on message size to balance overhead and latency hiding.",
+        "pipeline_overlap": "Overlap Reduce-Scatter and AllGather phases in Ring AllReduce for latency hiding.",
+        "intra_node_first": "Perform intra-node reduction before inter-node exchange to minimize cross-node traffic.",
     }
 
     @classmethod
