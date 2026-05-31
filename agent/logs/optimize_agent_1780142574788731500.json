@@ -1,0 +1,12 @@
+{
+  "agent": "optimize_agent",
+  "success": true,
+  "duration_ms": 0.0,
+  "artifacts": [
+    "optimization_report.md"
+  ],
+  "metrics": {
+    "duration_ms": 0.4444122314453125
+  },
+  "errors": []
+}

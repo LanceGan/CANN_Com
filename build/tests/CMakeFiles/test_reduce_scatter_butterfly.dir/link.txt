@@ -1,0 +1,3 @@
+F:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\test_reduce_scatter_butterfly.dir/objects.a
+F:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_reduce_scatter_butterfly.dir/objects.a @CMakeFiles\test_reduce_scatter_butterfly.dir\objects1.rsp
+F:\msys64\ucrt64\bin\c++.exe  -static -Wl,--whole-archive CMakeFiles\test_reduce_scatter_butterfly.dir/objects.a -Wl,--no-whole-archive -o test_reduce_scatter_butterfly.exe -Wl,--out-implib,libtest_reduce_scatter_butterfly.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_reduce_scatter_butterfly.dir\linkLibs.rsp

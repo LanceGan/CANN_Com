@@ -1,0 +1,3 @@
+F:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\test_allreduce_pipeline.dir/objects.a
+F:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_allreduce_pipeline.dir/objects.a @CMakeFiles\test_allreduce_pipeline.dir\objects1.rsp
+F:\msys64\ucrt64\bin\c++.exe  -static -Wl,--whole-archive CMakeFiles\test_allreduce_pipeline.dir/objects.a -Wl,--no-whole-archive -o test_allreduce_pipeline.exe -Wl,--out-implib,libtest_allreduce_pipeline.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_allreduce_pipeline.dir\linkLibs.rsp

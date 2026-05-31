@@ -1,0 +1,3 @@
+F:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\test_reliability.dir/objects.a
+F:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_reliability.dir/objects.a @CMakeFiles\test_reliability.dir\objects1.rsp
+F:\msys64\ucrt64\bin\c++.exe  -static -Wl,--whole-archive CMakeFiles\test_reliability.dir/objects.a -Wl,--no-whole-archive -o test_reliability.exe -Wl,--out-implib,libtest_reliability.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_reliability.dir\linkLibs.rsp

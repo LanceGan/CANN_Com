@@ -1,0 +1,3 @@
+F:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\bench_comm.dir/objects.a
+F:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\bench_comm.dir/objects.a @CMakeFiles\bench_comm.dir\objects1.rsp
+F:\msys64\ucrt64\bin\c++.exe  -static -Wl,--whole-archive CMakeFiles\bench_comm.dir/objects.a -Wl,--no-whole-archive -o bench_comm.exe -Wl,--out-implib,libbench_comm.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\bench_comm.dir\linkLibs.rsp

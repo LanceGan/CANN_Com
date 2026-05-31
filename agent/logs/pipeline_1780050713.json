@@ -1,0 +1,12 @@
+{
+  "timestamp": 1780050713,
+  "duration_ms": 0.34809112548828125,
+  "stages": {
+    "design": {
+      "success": true,
+      "artifacts": [
+        "design.md"
+      ]
+    }
+  }
+}

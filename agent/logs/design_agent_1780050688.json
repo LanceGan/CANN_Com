@@ -1,0 +1,14 @@
+{
+  "agent": "design_agent",
+  "success": true,
+  "duration_ms": 0.0,
+  "artifacts": [
+    "design.md"
+  ],
+  "metrics": {
+    "duration_ms": 0.4782676696777344,
+    "nranks": 8,
+    "data_size": 1048576
+  },
+  "errors": []
+}

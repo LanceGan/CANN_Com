@@ -1,0 +1,40 @@
+test_types 0 0
+test_topology 0 0
+test_link_model 0 0
+test_channel 0 0
+test_simulator 0 0
+test_allreduce 1 0
+test_allgather 1 0.0351221
+test_allgather_butterfly 0 0
+test_reduce_scatter 0 0
+test_reduce_scatter_butterfly 0 0
+test_alltoall 1 0
+test_broadcast 1 0
+test_algorithm_selector 0 0
+test_allreduce_rhd 0 0
+test_allreduce_pipeline 0 0
+test_fault_channel 0 0
+test_multinode 0 0
+test_reliability 0 0
+test_mixed_precision 0 0
+test_correctness_rigorous 0 0
+---
+test_types
+test_topology
+test_link_model
+test_channel
+test_simulator
+test_allreduce
+test_allgather_butterfly
+test_reduce_scatter
+test_reduce_scatter_butterfly
+test_alltoall
+test_broadcast
+test_algorithm_selector
+test_allreduce_rhd
+test_allreduce_pipeline
+test_fault_channel
+test_multinode
+test_reliability
+test_mixed_precision
+test_correctness_rigorous

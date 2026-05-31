@@ -1,0 +1,12 @@
+{
+  "agent": "test_agent",
+  "success": true,
+  "duration_ms": 0.0,
+  "artifacts": [
+    "test_allreduceagent.cpp"
+  ],
+  "metrics": {
+    "duration_ms": 0.1430511474609375
+  },
+  "errors": []
+}

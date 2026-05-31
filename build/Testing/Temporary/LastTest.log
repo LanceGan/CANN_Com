@@ -1,0 +1,694 @@
+Start testing: May 30 20:50 中国标准时间
+----------------------------------------------------------
+1/20 Testing: test_types
+1/20 Test: test_types
+Command: "F:/Projects/CANN_Com/build/tests/test_types.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_types" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 2 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from HCCLDataTypeTest
+[ RUN      ] HCCLDataTypeTest.SizeInBytes
+[       OK ] HCCLDataTypeTest.SizeInBytes (0 ms)
+[----------] 1 test from HCCLDataTypeTest (0 ms total)
+
+[----------] 1 test from HCCLReduceOpTest
+[ RUN      ] HCCLReduceOpTest.ReduceOperations
+[       OK ] HCCLReduceOpTest.ReduceOperations (0 ms)
+[----------] 1 test from HCCLReduceOpTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_types" end time: May 30 20:50 中国标准时间
+"test_types" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/20 Testing: test_topology
+2/20 Test: test_topology
+Command: "F:/Projects/CANN_Com/build/tests/test_topology.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_topology" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 5 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from NPUDeviceTest
+[ RUN      ] NPUDeviceTest.Creation
+[       OK ] NPUDeviceTest.Creation (0 ms)
+[----------] 1 test from NPUDeviceTest (0 ms total)
+
+[----------] 4 tests from TopologyBuilderTest
+[ RUN      ] TopologyBuilderTest.SingleNode
+[       OK ] TopologyBuilderTest.SingleNode (0 ms)
+[ RUN      ] TopologyBuilderTest.TwoNodesWithLink
+[       OK ] TopologyBuilderTest.TwoNodesWithLink (0 ms)
+[ RUN      ] TopologyBuilderTest.DeviceIdToRank
+[       OK ] TopologyBuilderTest.DeviceIdToRank (0 ms)
+[ RUN      ] TopologyBuilderTest.IntraNodeLinks
+[       OK ] TopologyBuilderTest.IntraNodeLinks (0 ms)
+[----------] 4 tests from TopologyBuilderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 2 test suites ran. (0 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Failed.
+"test_topology" end time: May 30 20:50 中国标准时间
+"test_topology" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/20 Testing: test_link_model
+3/20 Test: test_link_model
+Command: "F:/Projects/CANN_Com/build/tests/test_link_model.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_link_model" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from LinkModelTest
+[ RUN      ] LinkModelTest.BasicTransferTime
+[       OK ] LinkModelTest.BasicTransferTime (0 ms)
+[ RUN      ] LinkModelTest.SmallDataTransfer
+[       OK ] LinkModelTest.SmallDataTransfer (0 ms)
+[ RUN      ] LinkModelTest.CongestionReducesBandwidth
+[       OK ] LinkModelTest.CongestionReducesBandwidth (0 ms)
+[ RUN      ] LinkModelTest.ROCEvsHCCSLatency
+[       OK ] LinkModelTest.ROCEvsHCCSLatency (0 ms)
+[----------] 4 tests from LinkModelTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Failed.
+"test_link_model" end time: May 30 20:50 中国标准时间
+"test_link_model" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/20 Testing: test_channel
+4/20 Test: test_channel
+Command: "F:/Projects/CANN_Com/build/tests/test_channel.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_channel" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from PureSimChannelTest
+[ RUN      ] PureSimChannelTest.SendRecvData
+[       OK ] PureSimChannelTest.SendRecvData (0 ms)
+[ RUN      ] PureSimChannelTest.TransferTimeTracked
+[       OK ] PureSimChannelTest.TransferTimeTracked (0 ms)
+[ RUN      ] PureSimChannelTest.BarrierSync
+[       OK ] PureSimChannelTest.BarrierSync (0 ms)
+[ RUN      ] PureSimChannelTest.LargeDataTransfer
+[       OK ] PureSimChannelTest.LargeDataTransfer (545 ms)
+[----------] 4 tests from PureSimChannelTest (545 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (545 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.65 sec
+----------------------------------------------------------
+Test Failed.
+"test_channel" end time: May 30 20:50 中国标准时间
+"test_channel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/20 Testing: test_simulator
+5/20 Test: test_simulator
+Command: "F:/Projects/CANN_Com/build/tests/test_simulator.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_simulator" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from SimulatorTest
+[ RUN      ] SimulatorTest.Creation
+[       OK ] SimulatorTest.Creation (0 ms)
+[ RUN      ] SimulatorTest.GetChannel
+[       OK ] SimulatorTest.GetChannel (0 ms)
+[ RUN      ] SimulatorTest.SimulateSendRecv
+[       OK ] SimulatorTest.SimulateSendRecv (0 ms)
+[ RUN      ] SimulatorTest.ResetClearsStats
+[       OK ] SimulatorTest.ResetClearsStats (0 ms)
+[ RUN      ] SimulatorTest.TwoNodeTopology
+[       OK ] SimulatorTest.TwoNodeTopology (0 ms)
+[----------] 5 tests from SimulatorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_simulator" end time: May 30 20:50 中国标准时间
+"test_simulator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/20 Testing: test_allreduce
+6/20 Test: test_allreduce
+Command: "F:/Projects/CANN_Com/build/tests/test_allreduce.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_allreduce" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from AllReduceTest
+[ RUN      ] AllReduceTest.TwoRanks
+[       OK ] AllReduceTest.TwoRanks (0 ms)
+[ RUN      ] AllReduceTest.FourRanks
+[       OK ] AllReduceTest.FourRanks (0 ms)
+[ RUN      ] AllReduceTest.EightRanks
+[       OK ] AllReduceTest.EightRanks (0 ms)
+[ RUN      ] AllReduceTest.LargeData
+[       OK ] AllReduceTest.LargeData (0 ms)
+[ RUN      ] AllReduceTest.AlgorithmName
+[       OK ] AllReduceTest.AlgorithmName (0 ms)
+[ RUN      ] AllReduceTest.NumSteps
+[       OK ] AllReduceTest.NumSteps (0 ms)
+[----------] 6 tests from AllReduceTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_allreduce" end time: May 30 20:50 中国标准时间
+"test_allreduce" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/20 Testing: test_allgather
+7/20 Test: test_allgather
+Command: "F:/Projects/CANN_Com/build/tests/test_allgather.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_allgather" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from AllGatherTest
+[ RUN      ] AllGatherTest.FourRanksSingleElement
+[       OK ] AllGatherTest.FourRanksSingleElement (0 ms)
+[ RUN      ] AllGatherTest.EightRanksLargeData
+[       OK ] AllGatherTest.EightRanksLargeData (1 ms)
+[ RUN      ] AllGatherTest.AlgorithmName
+[       OK ] AllGatherTest.AlgorithmName (0 ms)
+[ RUN      ] AllGatherTest.NumSteps
+[       OK ] AllGatherTest.NumSteps (0 ms)
+[----------] 4 tests from AllGatherTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"test_allgather" end time: May 30 20:50 中国标准时间
+"test_allgather" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/20 Testing: test_allgather_butterfly
+8/20 Test: test_allgather_butterfly
+Command: "F:/Projects/CANN_Com/build/tests/test_allgather_butterfly.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_allgather_butterfly" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from AllGatherButterflyTest
+[ RUN      ] AllGatherButterflyTest.FourRanks
+[       OK ] AllGatherButterflyTest.FourRanks (0 ms)
+[ RUN      ] AllGatherButterflyTest.EightRanks
+[       OK ] AllGatherButterflyTest.EightRanks (1 ms)
+[ RUN      ] AllGatherButterflyTest.AlgorithmName
+[       OK ] AllGatherButterflyTest.AlgorithmName (0 ms)
+[ RUN      ] AllGatherButterflyTest.NumSteps
+[       OK ] AllGatherButterflyTest.NumSteps (0 ms)
+[----------] 4 tests from AllGatherButterflyTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Failed.
+"test_allgather_butterfly" end time: May 30 20:50 中国标准时间
+"test_allgather_butterfly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/20 Testing: test_reduce_scatter
+9/20 Test: test_reduce_scatter
+Command: "F:/Projects/CANN_Com/build/tests/test_reduce_scatter.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_reduce_scatter" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from ReduceScatterTest
+[ RUN      ] ReduceScatterTest.FourRanks
+[       OK ] ReduceScatterTest.FourRanks (0 ms)
+[ RUN      ] ReduceScatterTest.EightRanksLargerData
+[       OK ] ReduceScatterTest.EightRanksLargerData (0 ms)
+[ RUN      ] ReduceScatterTest.AlgorithmName
+[       OK ] ReduceScatterTest.AlgorithmName (0 ms)
+[ RUN      ] ReduceScatterTest.NumSteps
+[       OK ] ReduceScatterTest.NumSteps (0 ms)
+[----------] 4 tests from ReduceScatterTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_reduce_scatter" end time: May 30 20:50 中国标准时间
+"test_reduce_scatter" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/20 Testing: test_reduce_scatter_butterfly
+10/20 Test: test_reduce_scatter_butterfly
+Command: "F:/Projects/CANN_Com/build/tests/test_reduce_scatter_butterfly.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_reduce_scatter_butterfly" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from ReduceScatterButterflyTest
+[ RUN      ] ReduceScatterButterflyTest.FourRanks
+[       OK ] ReduceScatterButterflyTest.FourRanks (0 ms)
+[ RUN      ] ReduceScatterButterflyTest.EightRanks
+[       OK ] ReduceScatterButterflyTest.EightRanks (0 ms)
+[ RUN      ] ReduceScatterButterflyTest.AlgorithmName
+[       OK ] ReduceScatterButterflyTest.AlgorithmName (0 ms)
+[ RUN      ] ReduceScatterButterflyTest.NumSteps
+[       OK ] ReduceScatterButterflyTest.NumSteps (0 ms)
+[----------] 4 tests from ReduceScatterButterflyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_reduce_scatter_butterfly" end time: May 30 20:50 中国标准时间
+"test_reduce_scatter_butterfly" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/20 Testing: test_alltoall
+11/20 Test: test_alltoall
+Command: "F:/Projects/CANN_Com/build/tests/test_alltoall.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_alltoall" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from AlltoAllTest
+[ RUN      ] AlltoAllTest.FourRanks
+[       OK ] AlltoAllTest.FourRanks (0 ms)
+[ RUN      ] AlltoAllTest.EightRanks
+[       OK ] AlltoAllTest.EightRanks (0 ms)
+[ RUN      ] AlltoAllTest.AlgorithmName
+[       OK ] AlltoAllTest.AlgorithmName (0 ms)
+[ RUN      ] AlltoAllTest.NumSteps
+[       OK ] AlltoAllTest.NumSteps (0 ms)
+[----------] 4 tests from AlltoAllTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_alltoall" end time: May 30 20:50 中国标准时间
+"test_alltoall" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/20 Testing: test_broadcast
+12/20 Test: test_broadcast
+Command: "F:/Projects/CANN_Com/build/tests/test_broadcast.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_broadcast" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from BroadcastTest
+[ RUN      ] BroadcastTest.FourRanks
+[       OK ] BroadcastTest.FourRanks (0 ms)
+[ RUN      ] BroadcastTest.EightRanks
+[       OK ] BroadcastTest.EightRanks (0 ms)
+[ RUN      ] BroadcastTest.AlgorithmName
+[       OK ] BroadcastTest.AlgorithmName (0 ms)
+[ RUN      ] BroadcastTest.NumSteps
+[       OK ] BroadcastTest.NumSteps (0 ms)
+[----------] 4 tests from BroadcastTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_broadcast" end time: May 30 20:50 中国标准时间
+"test_broadcast" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/20 Testing: test_algorithm_selector
+13/20 Test: test_algorithm_selector
+Command: "F:/Projects/CANN_Com/build/tests/test_algorithm_selector.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_algorithm_selector" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 16 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 16 tests from AlgorithmSelectorTest
+[ RUN      ] AlgorithmSelectorTest.SelectAllReduceSmallData
+[       OK ] AlgorithmSelectorTest.SelectAllReduceSmallData (0 ms)
+[ RUN      ] AlgorithmSelectorTest.SelectAllGather
+[       OK ] AlgorithmSelectorTest.SelectAllGather (0 ms)
+[ RUN      ] AlgorithmSelectorTest.SelectReduceScatter
+[       OK ] AlgorithmSelectorTest.SelectReduceScatter (0 ms)
+[ RUN      ] AlgorithmSelectorTest.SelectAlltoAll
+[       OK ] AlgorithmSelectorTest.SelectAlltoAll (0 ms)
+[ RUN      ] AlgorithmSelectorTest.ReturnsNullForUnknown
+F:\Projects\CANN_Com\tests\unit\test_algorithm_selector.cpp:39: Failure
+Expected equality of these values:
+  algo
+    Which is: 0x2d0c1ff738
+  nullptr
+    Which is: (nullptr)
+
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"test_algorithm_selector" end time: May 30 20:50 中国标准时间
+"test_algorithm_selector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/20 Testing: test_allreduce_rhd
+14/20 Test: test_allreduce_rhd
+Command: "F:/Projects/CANN_Com/build/tests/test_allreduce_rhd.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_allreduce_rhd" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from AllReduceRHDTest
+[ RUN      ] AllReduceRHDTest.TwoRanks
+[       OK ] AllReduceRHDTest.TwoRanks (0 ms)
+[ RUN      ] AllReduceRHDTest.FourRanks
+[       OK ] AllReduceRHDTest.FourRanks (0 ms)
+[ RUN      ] AllReduceRHDTest.EightRanks
+[       OK ] AllReduceRHDTest.EightRanks (0 ms)
+[ RUN      ] AllReduceRHDTest.LargeData
+[       OK ] AllReduceRHDTest.LargeData (0 ms)
+[ RUN      ] AllReduceRHDTest.AlgorithmName
+[       OK ] AllReduceRHDTest.AlgorithmName (0 ms)
+[ RUN      ] AllReduceRHDTest.NumSteps
+[       OK ] AllReduceRHDTest.NumSteps (0 ms)
+[----------] 6 tests from AllReduceRHDTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Failed.
+"test_allreduce_rhd" end time: May 30 20:50 中国标准时间
+"test_allreduce_rhd" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/20 Testing: test_allreduce_pipeline
+15/20 Test: test_allreduce_pipeline
+Command: "F:/Projects/CANN_Com/build/tests/test_allreduce_pipeline.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_allreduce_pipeline" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from AllReducePipelineTest
+[ RUN      ] AllReducePipelineTest.FourRanks
+[       OK ] AllReducePipelineTest.FourRanks (0 ms)
+[ RUN      ] AllReducePipelineTest.EightRanks
+[       OK ] AllReducePipelineTest.EightRanks (0 ms)
+[ RUN      ] AllReducePipelineTest.LargeData
+[       OK ] AllReducePipelineTest.LargeData (0 ms)
+[ RUN      ] AllReducePipelineTest.PipelineDepth
+[       OK ] AllReducePipelineTest.PipelineDepth (2 ms)
+[ RUN      ] AllReducePipelineTest.NumSteps
+[       OK ] AllReducePipelineTest.NumSteps (0 ms)
+[ RUN      ] AllReducePipelineTest.AlgorithmName
+[       OK ] AllReducePipelineTest.AlgorithmName (0 ms)
+[----------] 6 tests from AllReducePipelineTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (4 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Failed.
+"test_allreduce_pipeline" end time: May 30 20:50 中国标准时间
+"test_allreduce_pipeline" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/20 Testing: test_fault_channel
+16/20 Test: test_fault_channel
+Command: "F:/Projects/CANN_Com/build/tests/test_fault_channel.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_fault_channel" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 7 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 7 tests from FaultChannelTest
+[ RUN      ] FaultChannelTest.NormalOperation
+[       OK ] FaultChannelTest.NormalOperation (0 ms)
+[ RUN      ] FaultChannelTest.LinkFailure
+[       OK ] FaultChannelTest.LinkFailure (0 ms)
+[ RUN      ] FaultChannelTest.StatsTrackFaults
+[       OK ] FaultChannelTest.StatsTrackFaults (0 ms)
+[ RUN      ] FaultChannelTest.FlowControlTest
+[       OK ] FaultChannelTest.FlowControlTest (0 ms)
+[ RUN      ] FaultChannelTest.FlowControlRespectsMaxConcurrent
+[       OK ] FaultChannelTest.FlowControlRespectsMaxConcurrent (0 ms)
+[ RUN      ] FaultChannelTest.RetransmissionTest
+[       OK ] FaultChannelTest.RetransmissionTest (0 ms)
+[ RUN      ] FaultChannelTest.RetransmissionSuccessAfterRetry
+[       OK ] FaultChannelTest.RetransmissionSuccessAfterRetry (0 ms)
+[----------] 7 tests from FaultChannelTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_fault_channel" end time: May 30 20:50 中国标准时间
+"test_fault_channel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/20 Testing: test_multinode
+17/20 Test: test_multinode
+Command: "F:/Projects/CANN_Com/build/tests/test_multinode.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_multinode" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from MultiNodeTest
+[ RUN      ] MultiNodeTest.TwoNodeAllReduceRing
+[       OK ] MultiNodeTest.TwoNodeAllReduceRing (2 ms)
+[ RUN      ] MultiNodeTest.TwoNodeAllReduceRHD
+[       OK ] MultiNodeTest.TwoNodeAllReduceRHD (2 ms)
+[ RUN      ] MultiNodeTest.TwoNodeAllGather
+[       OK ] MultiNodeTest.TwoNodeAllGather (0 ms)
+[----------] 3 tests from MultiNodeTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (6 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_multinode" end time: May 30 20:50 中国标准时间
+"test_multinode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/20 Testing: test_reliability
+18/20 Test: test_reliability
+Command: "F:/Projects/CANN_Com/build/tests/test_reliability.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_reliability" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from ReliabilityTest
+[ RUN      ] ReliabilityTest.AllReduceRingWithLinkFailure
+[       OK ] ReliabilityTest.AllReduceRingWithLinkFailure (1 ms)
+[ RUN      ] ReliabilityTest.CorrectnessWithoutFaults
+[       OK ] ReliabilityTest.CorrectnessWithoutFaults (0 ms)
+[ RUN      ] ReliabilityTest.FaultChannelStatsAccumulate
+[       OK ] ReliabilityTest.FaultChannelStatsAccumulate (0 ms)
+[----------] 3 tests from ReliabilityTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Failed.
+"test_reliability" end time: May 30 20:50 中国标准时间
+"test_reliability" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/20 Testing: test_mixed_precision
+19/20 Test: test_mixed_precision
+Command: "F:/Projects/CANN_Com/build/tests/test_mixed_precision.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_mixed_precision" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 7 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 3 tests from FP16Test
+[ RUN      ] FP16Test.ConversionRoundTrip
+[       OK ] FP16Test.ConversionRoundTrip (0 ms)
+[ RUN      ] FP16Test.ZeroAndInfinity
+[       OK ] FP16Test.ZeroAndInfinity (0 ms)
+[ RUN      ] FP16Test.ReduceBufferSum
+[       OK ] FP16Test.ReduceBufferSum (0 ms)
+[----------] 3 tests from FP16Test (0 ms total)
+
+[----------] 2 tests from BF16Test
+[ RUN      ] BF16Test.ConversionRoundTrip
+[       OK ] BF16Test.ConversionRoundTrip (0 ms)
+[ RUN      ] BF16Test.ReduceBufferSum
+[       OK ] BF16Test.ReduceBufferSum (0 ms)
+[----------] 2 tests from BF16Test (0 ms total)
+
+[----------] 2 tests from MixedPrecisionTest
+[ RUN      ] MixedPrecisionTest.AllReduceFP16
+[       OK ] MixedPrecisionTest.AllReduceFP16 (0 ms)
+[ RUN      ] MixedPrecisionTest.AllReduceBF16
+[       OK ] MixedPrecisionTest.AllReduceBF16 (0 ms)
+[----------] 2 tests from MixedPrecisionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 3 test suites ran. (1 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Failed.
+"test_mixed_precision" end time: May 30 20:50 中国标准时间
+"test_mixed_precision" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/20 Testing: test_correctness_rigorous
+20/20 Test: test_correctness_rigorous
+Command: "F:/Projects/CANN_Com/build/tests/test_correctness_rigorous.exe"
+Directory: F:/Projects/CANN_Com/build/tests
+"test_correctness_rigorous" start time: May 30 20:50 中国标准时间
+Output:
+----------------------------------------------------------
+Running main() from C:/M/B/src/googletest-1.15.2/googletest/src/gtest_main.cc
+[==========] Running 12 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 12 tests from RigorousCorrectnessTest
+[ RUN      ] RigorousCorrectnessTest.AllReduceSingleElement4Ranks
+[       OK ] RigorousCorrectnessTest.AllReduceSingleElement4Ranks (0 ms)
+[ RUN      ] RigorousCorrectnessTest.AllReduceSingleElement8Ranks
+[       OK ] RigorousCorrectnessTest.AllReduceSingleElement8Ranks (0 ms)
+[ RUN      ] RigorousCorrectnessTest.AllReduceCountLessThanRanks
+[       OK ] RigorousCorrectnessTest.AllReduceCountLessThanRanks (0 ms)
+[ RUN      ] RigorousCorrectnessTest.AllReduceLargeData1MB
+[       OK ] RigorousCorrectnessTest.AllReduceLargeData1MB (4 ms)
+[ RUN      ] RigorousCorrectnessTest.AllReducePrecisionDriftFLOAT32
+[       OK ] RigorousCorrectnessTest.AllReducePrecisionDriftFLOAT32 (27 ms)
+[ RUN      ] RigorousCorrectnessTest.AllReducePrecisionDriftFP16
+[       OK ] RigorousCorrectnessTest.AllReducePrecisionDriftFP16 (19 ms)
+[ RUN      ] RigorousCorrectnessTest.RandomizedAllReduce
+[       OK ] RigorousCorrectnessTest.RandomizedAllReduce (0 ms)
+[ RUN      ] RigorousCorrectnessTest.RandomizedAllGather
+[       OK ] RigorousCorrectnessTest.RandomizedAllGather (0 ms)
+[ RUN      ] RigorousCorrectnessTest.MixedDataTypesFLOAT32
+[       OK ] RigorousCorrectnessTest.MixedDataTypesFLOAT32 (0 ms)
+[ RUN      ] RigorousCorrectnessTest.MixedDataTypesFP16
+[       OK ] RigorousCorrectnessTest.MixedDataTypesFP16 (0 ms)
+[ RUN      ] RigorousCorrectnessTest.MixedDataTypesBF16
+[       OK ] RigorousCorrectnessTest.MixedDataTypesBF16 (0 ms)
+[ RUN      ] RigorousCorrectnessTest.MixedDataTypesINT32
+[       OK ] RigorousCorrectnessTest.MixedDataTypesINT32 (0 ms)
+[----------] 12 tests from RigorousCorrectnessTest (53 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test suite ran. (53 ms total)
+[  PASSED  ] 12 tests.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"test_correctness_rigorous" end time: May 30 20:50 中国标准时间
+"test_correctness_rigorous" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 30 20:50 中国标准时间

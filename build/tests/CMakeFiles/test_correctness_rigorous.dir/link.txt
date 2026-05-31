@@ -1,0 +1,3 @@
+F:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\test_correctness_rigorous.dir/objects.a
+F:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_correctness_rigorous.dir/objects.a @CMakeFiles\test_correctness_rigorous.dir\objects1.rsp
+F:\msys64\ucrt64\bin\c++.exe  -static -Wl,--whole-archive CMakeFiles\test_correctness_rigorous.dir/objects.a -Wl,--no-whole-archive -o test_correctness_rigorous.exe -Wl,--out-implib,libtest_correctness_rigorous.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_correctness_rigorous.dir\linkLibs.rsp

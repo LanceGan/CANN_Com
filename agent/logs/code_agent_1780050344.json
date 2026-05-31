@@ -1,0 +1,10 @@
+{
+  "agent": "code_agent",
+  "success": true,
+  "duration_ms": 0.0,
+  "artifacts": [],
+  "metrics": {
+    "duration_ms": 0.2779960632324219
+  },
+  "errors": []
+}

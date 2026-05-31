@@ -1,0 +1,218 @@
+[
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\simulator\\topology\\topology_builder.cpp.obj -c F:\\Projects\\CANN_Com\\src\\simulator\\topology\\topology_builder.cpp",
+  "file": "F:/Projects/CANN_Com/src/simulator/topology/topology_builder.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/simulator/topology/topology_builder.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\simulator\\network\\link_model.cpp.obj -c F:\\Projects\\CANN_Com\\src\\simulator\\network\\link_model.cpp",
+  "file": "F:/Projects/CANN_Com/src/simulator/network/link_model.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/simulator/network/link_model.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\simulator\\channel\\pure_sim_channel.cpp.obj -c F:\\Projects\\CANN_Com\\src\\simulator\\channel\\pure_sim_channel.cpp",
+  "file": "F:/Projects/CANN_Com/src/simulator/channel/pure_sim_channel.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/simulator/channel/pure_sim_channel.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\simulator\\channel\\fault_channel.cpp.obj -c F:\\Projects\\CANN_Com\\src\\simulator\\channel\\fault_channel.cpp",
+  "file": "F:/Projects/CANN_Com/src/simulator/channel/fault_channel.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/simulator/channel/fault_channel.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\simulator\\simulator.cpp.obj -c F:\\Projects\\CANN_Com\\src\\simulator\\simulator.cpp",
+  "file": "F:/Projects/CANN_Com/src/simulator/simulator.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/simulator/simulator.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\allreduce\\allreduce_ring.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\allreduce\\allreduce_ring.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/allreduce/allreduce_ring.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/allreduce/allreduce_ring.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\allreduce\\allreduce_rhd.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\allreduce\\allreduce_rhd.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/allreduce/allreduce_rhd.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/allreduce/allreduce_rhd.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\allreduce\\allreduce_pipeline.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\allreduce\\allreduce_pipeline.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/allreduce/allreduce_pipeline.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/allreduce/allreduce_pipeline.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\allgather\\allgather_ring.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\allgather\\allgather_ring.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/allgather/allgather_ring.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/allgather/allgather_ring.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\allgather\\allgather_butterfly.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\allgather\\allgather_butterfly.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/allgather/allgather_butterfly.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/allgather/allgather_butterfly.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\reduce_scatter\\reduce_scatter_ring.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\reduce_scatter\\reduce_scatter_ring.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/reduce_scatter/reduce_scatter_ring.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/reduce_scatter/reduce_scatter_ring.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\reduce_scatter\\reduce_scatter_butterfly.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\reduce_scatter\\reduce_scatter_butterfly.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/reduce_scatter/reduce_scatter_butterfly.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/reduce_scatter/reduce_scatter_butterfly.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\alltoall\\alltoall_direct.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\alltoall\\alltoall_direct.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/alltoall/alltoall_direct.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/alltoall/alltoall_direct.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\broadcast\\broadcast_ring.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\broadcast\\broadcast_ring.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/broadcast/broadcast_ring.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/broadcast/broadcast_ring.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/cann_sim.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\cann_sim.dir\\src\\algorithm\\selector\\algorithm_selector.cpp.obj -c F:\\Projects\\CANN_Com\\src\\algorithm\\selector\\algorithm_selector.cpp",
+  "file": "F:/Projects/CANN_Com/src/algorithm/selector/algorithm_selector.cpp",
+  "output": "CMakeFiles/cann_sim.dir/src/algorithm/selector/algorithm_selector.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_types.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_types.dir\\unit\\test_types.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_types.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_types.cpp",
+  "output": "tests/CMakeFiles/test_types.dir/unit/test_types.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_topology.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_topology.dir\\unit\\test_topology.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_topology.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_topology.cpp",
+  "output": "tests/CMakeFiles/test_topology.dir/unit/test_topology.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_link_model.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_link_model.dir\\unit\\test_link_model.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_link_model.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_link_model.cpp",
+  "output": "tests/CMakeFiles/test_link_model.dir/unit/test_link_model.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_channel.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_channel.dir\\unit\\test_pure_sim_channel.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_pure_sim_channel.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_pure_sim_channel.cpp",
+  "output": "tests/CMakeFiles/test_channel.dir/unit/test_pure_sim_channel.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_simulator.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_simulator.dir\\unit\\test_simulator.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_simulator.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_simulator.cpp",
+  "output": "tests/CMakeFiles/test_simulator.dir/unit/test_simulator.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_allreduce.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_allreduce.dir\\unit\\test_allreduce.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_allreduce.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_allreduce.cpp",
+  "output": "tests/CMakeFiles/test_allreduce.dir/unit/test_allreduce.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_allgather.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_allgather.dir\\unit\\test_allgather.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_allgather.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_allgather.cpp",
+  "output": "tests/CMakeFiles/test_allgather.dir/unit/test_allgather.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_allgather_butterfly.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_allgather_butterfly.dir\\unit\\test_allgather_butterfly.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_allgather_butterfly.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_allgather_butterfly.cpp",
+  "output": "tests/CMakeFiles/test_allgather_butterfly.dir/unit/test_allgather_butterfly.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_reduce_scatter.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_reduce_scatter.dir\\unit\\test_reduce_scatter.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_reduce_scatter.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_reduce_scatter.cpp",
+  "output": "tests/CMakeFiles/test_reduce_scatter.dir/unit/test_reduce_scatter.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_reduce_scatter_butterfly.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_reduce_scatter_butterfly.dir\\unit\\test_reduce_scatter_butterfly.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_reduce_scatter_butterfly.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_reduce_scatter_butterfly.cpp",
+  "output": "tests/CMakeFiles/test_reduce_scatter_butterfly.dir/unit/test_reduce_scatter_butterfly.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_alltoall.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_alltoall.dir\\unit\\test_alltoall.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_alltoall.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_alltoall.cpp",
+  "output": "tests/CMakeFiles/test_alltoall.dir/unit/test_alltoall.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_broadcast.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_broadcast.dir\\unit\\test_broadcast.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_broadcast.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_broadcast.cpp",
+  "output": "tests/CMakeFiles/test_broadcast.dir/unit/test_broadcast.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_algorithm_selector.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_algorithm_selector.dir\\unit\\test_algorithm_selector.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_algorithm_selector.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_algorithm_selector.cpp",
+  "output": "tests/CMakeFiles/test_algorithm_selector.dir/unit/test_algorithm_selector.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_allreduce_rhd.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_allreduce_rhd.dir\\unit\\test_allreduce_rhd.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_allreduce_rhd.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_allreduce_rhd.cpp",
+  "output": "tests/CMakeFiles/test_allreduce_rhd.dir/unit/test_allreduce_rhd.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_allreduce_pipeline.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_allreduce_pipeline.dir\\unit\\test_allreduce_pipeline.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_allreduce_pipeline.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_allreduce_pipeline.cpp",
+  "output": "tests/CMakeFiles/test_allreduce_pipeline.dir/unit/test_allreduce_pipeline.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_fault_channel.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_fault_channel.dir\\unit\\test_fault_channel.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_fault_channel.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_fault_channel.cpp",
+  "output": "tests/CMakeFiles/test_fault_channel.dir/unit/test_fault_channel.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_multinode.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_multinode.dir\\unit\\test_multinode.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_multinode.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_multinode.cpp",
+  "output": "tests/CMakeFiles/test_multinode.dir/unit/test_multinode.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_reliability.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_reliability.dir\\fault\\test_reliability.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\fault\\test_reliability.cpp",
+  "file": "F:/Projects/CANN_Com/tests/fault/test_reliability.cpp",
+  "output": "tests/CMakeFiles/test_reliability.dir/fault/test_reliability.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_mixed_precision.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_mixed_precision.dir\\unit\\test_mixed_precision.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_mixed_precision.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_mixed_precision.cpp",
+  "output": "tests/CMakeFiles/test_mixed_precision.dir/unit/test_mixed_precision.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe -DGTEST_LINKED_AS_SHARED_LIBRARY=1 @CMakeFiles/test_correctness_rigorous.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\test_correctness_rigorous.dir\\unit\\test_correctness_rigorous.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\unit\\test_correctness_rigorous.cpp",
+  "file": "F:/Projects/CANN_Com/tests/unit/test_correctness_rigorous.cpp",
+  "output": "tests/CMakeFiles/test_correctness_rigorous.dir/unit/test_correctness_rigorous.cpp.obj"
+},
+{
+  "directory": "F:/Projects/CANN_Com/build/tests",
+  "command": "F:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/bench_comm.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles\\bench_comm.dir\\benchmark\\bench_comm.cpp.obj -c F:\\Projects\\CANN_Com\\tests\\benchmark\\bench_comm.cpp",
+  "file": "F:/Projects/CANN_Com/tests/benchmark/bench_comm.cpp",
+  "output": "tests/CMakeFiles/bench_comm.dir/benchmark/bench_comm.cpp.obj"
+}
+]

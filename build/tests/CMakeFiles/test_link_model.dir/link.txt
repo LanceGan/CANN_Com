@@ -1,0 +1,3 @@
+F:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\test_link_model.dir/objects.a
+F:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_link_model.dir/objects.a @CMakeFiles\test_link_model.dir\objects1.rsp
+F:\msys64\ucrt64\bin\c++.exe  -static -Wl,--whole-archive CMakeFiles\test_link_model.dir/objects.a -Wl,--no-whole-archive -o test_link_model.exe -Wl,--out-implib,libtest_link_model.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_link_model.dir\linkLibs.rsp

@@ -1,0 +1,8 @@
+{
+  "iteration": 0,
+  "status": "build_failed",
+  "stages": [
+    "design",
+    "code"
+  ]
+}
