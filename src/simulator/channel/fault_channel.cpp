@@ -40,6 +40,16 @@ void FaultChannel::send(const void* data, size_t bytes, uint32_t dst_rank) {
                 throw CannException("Simulated timeout on send after retries");
             }
             inner_->send(data, bytes, dst_rank);
+            // Data corruption simulation
+            if (config_.data_corruption_rate > 0.0) {
+                std::lock_guard<std::mutex> lock(rng_mutex_);
+                std::uniform_real_distribution<double> dist(0.0, 1.0);
+                if (dist(rng_) < config_.data_corruption_rate) {
+                    fault_stats_.num_corruptions++;
+                    // Note: In simulation, we track corruption but don't modify actual data
+                    // as the mailbox is shared. The corruption is logged for analysis.
+                }
+            }
             success = true;
             break;
         }
@@ -77,11 +87,27 @@ void FaultChannel::recv(void* buffer, size_t bytes, uint32_t src_rank) {
                 throw CannException("Simulated timeout on recv after retries");
             }
             inner_->recv(buffer, bytes, src_rank);
+            // Data corruption simulation
+            if (config_.data_corruption_rate > 0.0) {
+                std::lock_guard<std::mutex> lock(rng_mutex_);
+                std::uniform_real_distribution<double> dist(0.0, 1.0);
+                if (dist(rng_) < config_.data_corruption_rate) {
+                    fault_stats_.num_corruptions++;
+                }
+            }
             return;
         }
     }
 
     inner_->recv(buffer, bytes, src_rank);
+    // Data corruption simulation
+    if (config_.data_corruption_rate > 0.0) {
+        std::lock_guard<std::mutex> lock(rng_mutex_);
+        std::uniform_real_distribution<double> dist(0.0, 1.0);
+        if (dist(rng_) < config_.data_corruption_rate) {
+            fault_stats_.num_corruptions++;
+        }
+    }
 }
 
 void FaultChannel::barrier() {

@@ -35,6 +35,11 @@ struct Node {
     uint32_t node_id;
     std::vector<NPUDevice> devices;
     std::vector<Link> intra_links;
+    // Hardware parameters
+    size_t hbm_capacity_gb = 32;      // HBM capacity per device (GB)
+    size_t ub_capacity_kb = 192;      // Unified Buffer capacity (KB)
+    int numa_node_id = 0;             // NUMA node ID
+    double pcie_bandwidth_gbps = 32.0; // PCIe bandwidth (GB/s)
 };
 
 class Topology {

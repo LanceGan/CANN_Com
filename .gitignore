@@ -1,0 +1,20 @@
+# Build
+build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Agent logs and output
+agent/logs/*.json
+agent/output/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
